@@ -1,4 +1,4 @@
-const invoke = window.__TAURI__.primitives.invoke;
+const invoke = window.__TAURI__.core.invoke;
 
 function eol() {
   return window.__TAURI__.os.__eol;

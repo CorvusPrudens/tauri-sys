@@ -1,4 +1,4 @@
-const { invoke, transformCallback } = window.__TAURI__.primitives;
+const { invoke, transformCallback } = window.__TAURI__.core;
 
 class Channel {
   id;

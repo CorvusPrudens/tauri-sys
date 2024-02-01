@@ -1,5 +1,5 @@
-const convertFileSrc = window.__TAURI__.primitives.convertFileSrc;
-const invoke = window.__TAURI__.primitives.invoke;
-const transformCallback = window.__TAURI__.primitives.transformCallback;
+const convertFileSrc = window.__TAURI__.core.convertFileSrc;
+const invoke = window.__TAURI__.core.invoke;
+const transformCallback = window.__TAURI__.core.transformCallback;
 
 export { convertFileSrc, invoke, transformCallback };

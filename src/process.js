@@ -1,4 +1,4 @@
-const invoke = window.__TAURI__.primitives.invoke;
+const invoke = window.__TAURI__.core.invoke;
 
 async function exit(code = 0) {
   return invoke("plugin:process|exit", { code });

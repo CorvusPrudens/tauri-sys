@@ -1,4 +1,4 @@
-const { invoke } = window.__TAURI__.primitives;
+const { invoke } = window.__TAURI__.core;
 
 async function writeText(text, opts) {
   return invoke("plugin:clipboard|write", {

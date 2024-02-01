@@ -1,4 +1,4 @@
-const { invoke, transformCallback } = window.__TAURI__.primitives;
+const { invoke, transformCallback } = window.__TAURI__.core;
 
 async function _unlisten(event, eventId) {
   await invoke("plugin:event|unlisten", {
