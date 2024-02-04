@@ -10,7 +10,7 @@ async function _unlisten(event, eventId) {
 async function listen(event, handler, options) {
   return invoke("plugin:event|listen", {
     event,
-    windowLabel: options?.target,
+    target: options?.target || { kind: "Any" },
     handler: transformCallback(handler),
   }).then((eventId) => {
     return async () => _unlisten(event, eventId);
@@ -31,7 +31,7 @@ async function once(event, handler, options) {
 async function emit(event, payload, options) {
   await invoke("plugin:event|emit", {
     event,
-    windowLabel: options?.target,
+    target: options?.target || { kind: "Any" },
     payload,
   });
 }

@@ -112,7 +112,7 @@ class CloseRequestedEvent {
 }
 
 function getCurrent() {
-  return new Window(window.__TAURI_INTERNALS__.currentWindow.label, {
+  return new Window(window.__TAURI_INTERNALS__.metadata.currentWindow.label, {
     skip: true,
   });
 }
