@@ -44,5 +44,5 @@ tauri = ["dep:url"]
 updater = ["dep:futures", "event"]
 window = ["dep:futures", "event"]
 
-[workspace]
-members = ["examples/test", "examples/test/src-tauri"]
+# [workspace]
+# members = ["examples/test", "examples/test/src-tauri"]
